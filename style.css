@@ -1,0 +1,75 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #f4f6f9;
+    color: #1e293b;
+    line-height: 1.5;
+}
+header {
+    background: #059669;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header h1 { font-size: 1.4rem; letter-spacing: 1px; }
+nav button {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+nav button:hover { background: rgba(255,255,255,0.3); }
+main { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+h2 { margin-bottom: 1rem; color: #0f172a; }
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.kpi-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border-left: 4px solid #059669;
+}
+.kpi-card h3 { font-size: 0.85rem; text-transform: uppercase; color: #64748b; margin-bottom: 0.5rem; }
+.kpi-card p { font-size: 1.8rem; font-weight: 700; color: #0f172a; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+th { background: #f8fafc; font-weight: 600; color: #475569; }
+tr.low-stock { background: #fef2f2; color: #b91c1c; }
+
+button {
+    background: #059669;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+button:hover { background: #047857; }
+.error { color: #dc2626; background: #fef2f2; padding: 1rem; border-radius: 8px; }
